@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Efecto Texto Neon</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="contenido-header" id="contenido-header">
+        <div class="texto-header">
+            <p class="icono">
+                <i class="fa fa-glass-cheers"></i>
+            </p>
+            <h1 class="titulo">
+                Moe's Bar <br> ¡Entra! <br>
+                <span class="titulo-naranja-neon texto-regular">50% de Descuento</span>
+            </h1>
+            <p class="descripcion">
+                Tenemos nueva sucursal <br> Por apertura, todas nuestras botellas a mitad <br> de precio en Av. Lorem 28B, Cl. Centro, Ipsum
+            </p>
+            <a href="#" class="btn-link texto-regular">MÁS INFORMACIÓN</a>
+        </div>
+
+    </header>
+    <main>
+        <section class="contenedor">
+            <h2 class="subtitulo-h2">Servicios</h2>
+            <p><span class="letra1">L</span>orem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis minima eaque culpa consequuntur a, ut officiis aperiam eligendi! Adipisci suscipit quas nostrum dolorem corrupti facere sunt maiores necessitatibus
+                quos ex.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum magnam blanditiis, ex, asperiores culpa optio consequatur libero non voluptatum praesentium nam quo? Maxime quidem sit eligendi adipisci fugiat distinctio molestias! Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Modi facere earum assumenda laboriosam est magnam nam tempore, obcaecati at. Adipisci alias unde temporibus! Earum, molestias deleniti ab nemo quaerat perspiciatis.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perspiciatis sint voluptates doloribus commodi doloremque repudiandae delectus iure. Reprehenderit quo sapiente suscipit beatae minus pariatur nihil culpa ad labore ex.
+            </p>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/ba0cb9d0e8.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('contenido-header');
+            header.style.opacity = '1' - window.pageYOffset / 658;
+        });
+    </script>
+</body>
+
+</html>
